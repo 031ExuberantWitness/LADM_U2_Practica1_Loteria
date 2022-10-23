@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Loteria</string>
+
+    <string name="tituloLoteria">LOTERIA</string>
+    <string name="imagenLogo">Logo del equipo</string>
+    <string name="btnIniciar">Iniciar</string>
+
+    <string name="cartaRetirada">Carta retida del mazo</string>
+    <string name="cartaActual">Carta recien retirada</string>
+</resources>

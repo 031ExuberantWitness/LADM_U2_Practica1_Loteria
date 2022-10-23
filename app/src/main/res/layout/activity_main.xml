@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundconcreto"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/lblTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tituloLoteria"
+            android:fontFamily="@font/bebas"
+            android:textAlignment="center"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:textColor="#2c2c2c"
+            />
+
+        <ImageView android:id="@+id/ivFiller"
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/cheems"
+            android:contentDescription="@string/imagenLogo"
+            />
+
+        <Button android:id="@+id/btnIniciar"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:padding="25dp"
+            android:text="@string/btnIniciar"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:backgroundTint="#9e252b"
+            />
+
+        <LinearLayout android:id="@+id/setCartas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView android:id="@+id/cartaRetirada3"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:contentDescription="@string/cartaRetirada"
+                    />
+
+                <ImageView android:id="@+id/cartaRetirada2"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:contentDescription="@string/cartaRetirada"
+                    />
+
+                <ImageView android:id="@+id/cartaRetirada1"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:contentDescription="@string/cartaRetirada"
+                    />
+            </LinearLayout>
+
+            <ImageView android:id="@+id/cartaActual"
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="50dp"
+                android:layout_gravity="center"
+                tools:srcCompat="@tools:sample/avatars"
+                android:contentDescription="@string/cartaActual"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/setControlesTitulos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView android:id="@+id/lbDetener"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bebas"
+                android:text="Pausar"
+                android:textSize="20dp"
+                android:textColor="#9e252b"
+                />
+
+            <TextView android:id="@+id/lbTirarCartas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bebas"
+                android:text="Cartas restantes"
+                android:textSize="20dp"
+                android:textColor="#9e252b"
+                />
+
+            <TextView android:id="@+id/lbReiniciar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bebas"
+                android:text="Reiniciar"
+                android:textSize="20dp"
+                android:textColor="#9e252b"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/setControles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/btnDetener"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/btn_pausar"
+                android:backgroundTint="#9e252b"
+                />
+
+            <Button android:id="@+id/btnTirarCartas"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/btn_ocultar"
+                android:backgroundTint="#9e252b"
+                />
+
+            <Button android:id="@+id/btnReiniciar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/btn_reiniciar"
+                android:backgroundTint="#9e252b"
+                />
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/lblCartasRestantes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Cartas Faltantes:"
+            android:textColor="#2c2c2c"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/cartas_faltantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="20dp"
+                android:text=""
+                android:textColor="#2c2c2c"
+                android:textAlignment="textStart"
+                android:textSize="20sp"
+
+                />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/carta_faltante_1"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:src="@drawable/carta5" />
+
+            <ImageView
+                android:id="@+id/carta_faltante_2"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:src="@drawable/carta5" />
+
+            <ImageView
+                android:id="@+id/carta_faltante_3"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:src="@drawable/carta5" />
+
+            <ImageView
+                android:id="@+id/carta_faltante_4"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:src="@drawable/carta5" />
+
+            <ImageView
+                android:id="@+id/carta_faltante_5"
+                android:layout_width="70dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:src="@drawable/carta5" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_next"
+            android:backgroundTint="#9e252b"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
